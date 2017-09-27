@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><style>div[class~="float"]{ display: inline; vertical-align: middle; float:left; margin-right: 10px;}
+div[class="multi"]{ display: block;}
+#main{ width: 310px;
+ float:left; text-align: right; margin-right: 10px;}
+#conteiner{ height: 100px; border : solid 1px black; border-radius: 15px; }
+input[name="name"]{ width: 230px;}
+div[class~="clearfix"]{ content: ""; clear: both; display: block;}
+input[name="other"]{ width: 250px;}
+div[id="conteiner"]{ width: 100%;}
+div[class~="clear"]{ position: fixed; right: 30px; bottom: 70px; }</style></head>
+<body><div id="conteiner" class="clearfix">  <div id="main" class="center float">    <div class="multi first">  姓: <input id="firstname" name="name" type="text" maxlength="20">  </div>    <div class="multi middle">  ミドル: <input id="middlename" name="name" type="text" maxlength="20">  </div>    <div class="multi last">  名: <input id="lastname" name="name" type="text" maxlength="20">  </div> </div> <div id="content" class="float">  <div class="ak multi">   <label>未確認：<input type="radio" name="pa" value="0" checked></label>   <label>登園：<input type="radio" name="pa" value="1"></label>   <label>欠席：<input type="radio" name="pa" value="2" ></label>   <label>遅刻：<input type="radio" name="pa" value="3" ></label>  </div>  <div class="gk multi">   <label>途中降園：<input type="radio" name="pa" value="4" ></label>   <label>降園：<input type="radio" name="pa" value="5" ></label>   <label>遅刻途中降園：<input type="radio" name="pa" value="6" ></label>  </div> </div> <div id="other" class="center float">  備考欄  <div class="remakes multi">   <textarea name="other" maxlength="200" cols="101" rows="4"></textarea>  </div> </div></div><div class="clear"> <input type="submit"></div>
+<!--<input type="password"><input type="button" value="テキストに変更">--><script>window.addEventListener('load', function(){ var text = ""; for( var i = 0; i < 20; i++){  text = text + "あ"; } document.querySelector("input[id='firstname']").value = text; text = ""; for( var i = 0; i < 200; i++){  text = text + "あ"; } document.querySelector("textarea[name='other']").value = text;})
+// window.addEventListener('load', function(){//  document.querySelector("input[type='button']").addEventListener('click', function(){//   var pass = document.querySelector("input[type='password']");//   if(pass != null && pass.getAttribute("type") == "password"){//    document.querySelector("input[type='password']").setAttribute("type", "text")//   }//  });// });
+</script></body></html>
