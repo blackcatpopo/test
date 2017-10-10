@@ -1,4 +1,25 @@
 -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
 
 
--XX:NewSize=3G -XX:MaxNewSize=3G -Xss3G -Xincgc -XX:+AggressiveOpts -XX:+ExplicitGCInvokesConcurrent -XX:+UnlockExperimentalVMOptions -XX:UseSSE=3 -XX:SurvivorRatio=8 -XX:NewRatio=2 -XX:MaxTenuringThreshold=15 -XX:+DoEscapeAnalysis -XX:+UseFastAccessorMethods -XX:+ForceTimeHighResolution -XX:+UseTLAB -XX:+ResizeTLAB -XX:MaxGCPauseMillis=5 -XX:ParallelGCThreads=4 -XX:+DisableExplicitGC -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -Xnoclassgc
+-XX:NewSize=3G 
+-XX:MaxNewSize=3G 
+-Xss3G 
+-Xincgc 
+-XX:+AggressiveOpts 
+-XX:+ExplicitGCInvokesConcurrent 
+-XX:+UnlockExperimentalVMOptions 
+-XX:UseSSE=3 
+-XX:SurvivorRatio=8 
+-XX:NewRatio=2 
+-XX:MaxTenuringThreshold=15 
+-XX:+DoEscapeAnalysis 
+-XX:+UseFastAccessorMethods 
+-XX:+ForceTimeHighResolution 
+-XX:+UseTLAB 
+-XX:+ResizeTLAB 
+-XX:MaxGCPauseMillis=5 
+-XX:ParallelGCThreads=4 
+-XX:+DisableExplicitGC 
+-XX:+UseAdaptiveGCBoundary 
+-XX:-UseGCOverheadLimit 
+-Xnoclassgc
